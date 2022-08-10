@@ -1,63 +1,46 @@
 {
   "name": "@jvbf2e/eslint-config-vue",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "ESLint Vue configuration for JS projects based on airbnb and Prettier configs",
   "main": "index.js",
-  "scripts": {
-    "format": "prettier --write **/*.js",
-    "lint": "eslint ./ --ignore-path .gitignore",
-    "lint:fix": "npm run lint -- --fix"
-  },
+  "scripts": {},
   "keywords": [
     "javascript",
     "eslint",
-    "eslintconfig",
     "eslint-config",
     "airbnb-config",
-    "prettier-config",
-    "react",
-    "hooks",
-    "react-hooks",
-    "vsilk"
+    "prettier-config"
   ],
   "author": "Jvb",
   "license": "MIT",
-  "prettier": "@jvbf2e/prettier-config",
   "dependencies": {
-    "@jvbf2e/prettier-config": "^1.0.0",
-    "eslint": "^8.5.0",
-    "prettier": "^2.5.1"
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-define-config": "^1.6.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsonc": "^2.3.1",
+    "eslint-plugin-markdown": "^3.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unicorn": "^43.0.2",
+    "eslint-plugin-vue": "^9.3.0",
+    "jsonc-eslint-parser": "^2.1.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.8.1",
-    "@typescript-eslint/parser": "^5.8.1",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-typescript": "^0.14.0",
-    "eslint-plugin-vue": "^8.2.0",
-    "typescript": "^4.5.4",
-    "vue-eslint-parser": "^8.0.1"
+    "@jvbf2e/prettier-config": "^0.0.2",
+    "eslint": "^8.21.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.8.1",
-    "@typescript-eslint/parser": "^5.8.1",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-typescript": "^0.14.0",
-    "eslint-plugin-vue": "^8.2.0",
-    "typescript": "^4.5.4",
-    "vue-eslint-parser": "^8.0.1"
+    "eslint": "^8.0.0",
+    "prettier": "^2.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jvbf2e/eslint-config-react.git"
+    "url": "git+https://github.com/jvbf2e/eslint-config-vue.git"
   },
   "bugs": {
-    "url": "https://github.com/jvbf2e/eslint-config-react/issues"
+    "url": "https://github.com/jvbf2e/eslint-config-vue/issues"
   },
-  "homepage": ""
+  "homepage": "https://github.com/jvbf2e/eslint-config-vue#readme"
 }
