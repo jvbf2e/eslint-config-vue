@@ -1,4 +1,5 @@
 const { defineConfig } = require("eslint-define-config");
+const prettierConfig = require("@jvbf2e/prettier-config");
 
 module.exports = defineConfig({
   env: {
