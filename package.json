@@ -1,6 +1,6 @@
 {
   "name": "@jvbjs/eslint-config-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint Vue configuration for JS projects based on airbnb and Prettier configs",
   "keywords": [
     "javascript",
@@ -41,7 +41,7 @@
     "prettier": "^2.0.0"
   },
   "dependencies": {
-    "@jvbjs/prettier-config": "workspace:^",
+    "@jvbjs/prettier-config": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",
     "eslint-config-prettier": "^8.8.0",
