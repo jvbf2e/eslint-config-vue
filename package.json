@@ -1,9 +1,7 @@
 {
-  "name": "@jvbf2e/eslint-config-vue",
-  "version": "0.0.2",
+  "name": "@jvbjs/eslint-config-vue",
+  "version": "1.0.0",
   "description": "ESLint Vue configuration for JS projects based on airbnb and Prettier configs",
-  "main": "index.js",
-  "scripts": {},
   "keywords": [
     "javascript",
     "eslint",
@@ -11,36 +9,64 @@
     "airbnb-config",
     "prettier-config"
   ],
-  "author": "Jvb",
   "license": "MIT",
-  "dependencies": {
-    "@jvbf2e/prettier-config": "^0.0.2",
-    "@typescript-eslint/eslint-plugin": "^5.33.0",
-    "@typescript-eslint/parser": "^5.33.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-define-config": "^1.6.0",
-    "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsonc": "^2.3.1",
-    "eslint-plugin-markdown": "^3.0.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-unicorn": "^43.0.2",
-    "eslint-plugin-vue": "^9.3.0",
-    "jsonc-eslint-parser": "^2.1.0"
+  "author": "luyj <vvimoink@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jvbf2e/eslint-config-vue.git"
   },
-  "devDependencies": {
-    "eslint": "^8.21.0"
+  "bugs": {
+    "url": "https://github.com/jvbf2e/eslint-config-vue/issues"
+  },
+  "files": [
+    "LICENSE",
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js"
+    },
+    "./*": "./*"
+  },
+  "publishConfig": {
+    "main": "dist/index.js"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "build": "tsup"
   },
   "peerDependencies": {
     "eslint": "^8.0.0",
     "prettier": "^2.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jvbf2e/eslint-config-vue.git"
+  "dependencies": {
+    "@jvbjs/prettier-config": "workspace:^",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-define-config": "^1.21.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsonc": "^2.9.0",
+    "eslint-plugin-markdown": "^3.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unicorn": "^43.0.2",
+    "eslint-plugin-vue": "^9.15.1",
+    "jsonc-eslint-parser": "^2.3.0"
   },
-  "bugs": {
-    "url": "https://github.com/jvbf2e/eslint-config-vue/issues"
+  "devDependencies": {
+    "eslint": "^8.44.0"
   },
-  "homepage": "https://github.com/jvbf2e/eslint-config-vue#readme"
+  "config": {
+    "commitizen": {
+      "path": "../../node_modules/cz-customizable"
+    }
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,json}": "eslint --fix",
+    "*.md": [
+      "prettier --write"
+    ]
+  }
 }

@@ -1,4 +1,4 @@
-# @jvbf2e/eslint-config-vue
+# @jvbjs/eslint-config-vue
 
 Quickly format your JavaScript files with this easy to install and use Prettier configuration.
 
